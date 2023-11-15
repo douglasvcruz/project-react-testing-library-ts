@@ -1,6 +1,6 @@
-import Button from '../Button/Button';
+import Button from '../Button/';
 
-import './pokemon-buttons-panel.css';
+import './style.css';
 
 type PokemonButtonsPanelProps = {
   pokemonTypes: string[],

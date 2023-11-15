@@ -1,6 +1,6 @@
 import { PokemonType } from '../../types';
 
-import './pokemon-data.css';
+import './style.css';
 
 type PokemonDataProps = { pokemon: PokemonType }
 

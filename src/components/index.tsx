@@ -1,5 +1,5 @@
-export { default as Button } from './Button/Button';
-export { default as FavoriteInput } from './FavoriteInput/FavoriteInput';
-export { default as Pokemon } from './Pokemon/Pokemon';
-export { default as PokemonButtonsPanel } from './PokemonButton/PokemonButtonsPanel';
-export { default as PokemonData } from './PokemonData/PokemonData';
+export { default as Button } from './Button';
+export { default as FavoriteInput } from './FavoriteInput';
+export { default as Pokemon } from './Pokemon';
+export { default as PokemonButtonsPanel } from './PokemonButton';
+export { default as PokemonData } from './PokemonData';

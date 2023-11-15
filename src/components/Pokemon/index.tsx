@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { PokemonType } from '../../types';
 
-import './pokemon.css';
+import './style.css';
 
 type PokemonProps = {
   pokemon: PokemonType,

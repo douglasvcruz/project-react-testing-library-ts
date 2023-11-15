@@ -1,4 +1,4 @@
-import './favorite-input.css';
+import './style.css';
 
 type FavoriteInputProps = { 
   onUpdateFavoritePokemon: (a: boolean) => void,
