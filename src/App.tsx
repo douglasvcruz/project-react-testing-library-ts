@@ -20,6 +20,9 @@ function App() {
             <Link className="link" to="/favorites">
               {`Favorite Pokémon`}
             </Link>
+            <Link className="link" to="/locations">
+              {`Locations Pokemon`}
+            </Link>
           </nav>
         </header>
       </div>
