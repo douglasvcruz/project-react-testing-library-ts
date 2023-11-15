@@ -7,7 +7,7 @@ import {
   PokemonButtonsPanel,
 } from '../../components';
 
-import './pokedex.css';
+import './style.css';
 
 const getPokemonTypes = (pokemonList: PokemonType[]) => {
   const pokemonTypes = pokemonList.reduce((types, { type }) => [...types, type], [] as string[])

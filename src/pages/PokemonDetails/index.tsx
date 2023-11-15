@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom';
 
 import { FavoritePokemonIdsObjType, PokemonType } from '../../types';
-import Pokemon from '../../components/Pokemon/Pokemon';
-import PokemonData from '../../components/PokemonData/PokemonData';
-import FavoriteInput from '../../components/FavoriteInput/FavoriteInput';
+import Pokemon from '../../components/Pokemon/';
+import PokemonData from '../../components/PokemonData/';
+import FavoriteInput from '../../components/FavoriteInput/';
 
-import './pokemon-details.css';
+import './style.css';
 
 type PokemonDetailsProps = {
   favoritePokemonIdsObj: FavoritePokemonIdsObjType,

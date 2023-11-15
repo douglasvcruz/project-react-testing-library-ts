@@ -1,5 +1,5 @@
 import image404 from "/404.gif"
-import './not-found.css';
+import './style.css';
 
 function NotFound() {
   return (

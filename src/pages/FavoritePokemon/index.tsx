@@ -1,6 +1,6 @@
 import { PokemonType } from '../../types';
 
-import './favorite-pokemon.css';
+import './style.css';
 import { Pokemon } from '../../components';
 
 type FavoritePokemonProps = { pokemonList: PokemonType[] };
