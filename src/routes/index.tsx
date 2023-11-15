@@ -13,6 +13,7 @@ import {
   PokemonDetails,
 } from '../pages';
 import pokemonList from '../data';
+import Locations from '../pages/Locations';
 
 function PageRoutes() {
   const [favoritePokemonIdsObj, setFavoritePokemonIdsObj] = useState(
@@ -24,34 +25,37 @@ function PageRoutes() {
     setFavoritePokemonIdsObj(getFavoritePokemonList());
   };
 
-  const favoritePokemonList = pokemonList.filter(({ id }) => favoritePokemonIdsObj[id]);
+  const favoritePokemonList = pokemonList.filter(
+    ({ id }) => favoritePokemonIdsObj[id],
+  );
   return (
     <Routes>
       <Route
         path="/"
-        element={ (
+        element={
           <Pokedex
             pokemonList={ pokemonList }
             favoritePokemonIdsObj={ favoritePokemonIdsObj }
           />
-        ) }
+        }
       />
       <Route
         path="/pokemon/:id"
-        element={ (
+        element={
           <PokemonDetails
             favoritePokemonIdsObj={ favoritePokemonIdsObj }
             pokemonList={ pokemonList }
             onUpdateFavoritePokemon={ onUpdateFavoritePokemon }
           />
-        ) }
+        }
       />
       <Route
         path="/favorites"
         element={ <FavoritePokemon pokemonList={ favoritePokemonList } /> }
       />
-      <Route path="/about" Component={ About } />
-      <Route path="*" Component={ NotFound } />
+      <Route path="/about" element={ <About /> } />
+      <Route path="/locations" element={ <Locations /> } />
+      <Route path="*" element={ <NotFound /> } />
     </Routes>
   );
 }
